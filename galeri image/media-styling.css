@@ -1,0 +1,121 @@
+@media only screen and (max-width: 688px) {
+    .nav {
+        height: 50px;
+    }
+    
+    .nav-logo {
+        padding-left: 20px;
+        padding-top: 8px;
+        font-size: 12px;
+    }
+
+    .nav-link {
+      display: none;
+    }
+
+    .hamburger {
+        width: 2em;  
+        height: 2em;  
+        margin: 12px 30px; 
+        z-index: 1;  
+        cursor: pointer;
+    }
+/*     
+    .hamburger:hover {  
+        animation: zoom 300ms ease-in;  
+    }
+
+    .lines {  
+        background-color: #fff;  
+        width: 100%;  
+        height: 5px;  
+        margin: 5px 0;  
+        transition: all 450ms ease-in;  
+    }
+
+    .close-hamburger .lines {  
+        cursor: pointer;  
+    }
+
+    .close-hamburger .line-top {  
+        transform: translateY(200%) rotate(45deg);  
+    }
+
+    .close-hamburger .line-mid {  
+        opacity: 0;  
+    }
+
+    .close-hamburger .line-bottom {  
+        transform: translateY(-200%) rotate(135deg);  
+    } */
+
+
+
+    .container {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        background-color: #181818;
+    }
+
+    .display {
+        width: 100%;
+        height: 40%px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title-display {
+        width: 90%;
+        height: auto;
+        color: white;
+        text-align: left;
+        text-shadow: 1px 1px white;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+
+    .nav-img li a {
+        display: flex;
+        flex-direction: row;
+        margin: 10px 25px;
+        text-align: center;
+    }
+
+    .lists {
+        width: 75%;
+        display: flex;
+    }
+
+    .anime-list {
+        display: none;
+    }
+
+    .anime-list {
+        display: flex;
+        flex-direction: row-reverse;
+        border: 1px solid black;
+        padding: 7px;
+        text-align: start;
+    }
+    
+    .anime-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+  }

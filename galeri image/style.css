@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "verdana", sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: crimson;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    padding-left: 25px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: aliceblue; 
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.search {
+    position: relative;
+    margin-top: 18px;
+    height: 50px;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 14px;
+    padding: 15px;
+    height: 35px;
+    width: 35px;
+    transition: width 0.3s ease;
+}
+
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, .input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
+}
+
+.nav-link li {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.nav-link li a {
+    color: aliceblue;
+    padding: 12px 30px;
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.nav-link li a:hover {
+    background-color: rgb(34, 4, 4);
+    color: crimson;
+}
+
+.hamburger {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #181818;
+}
+
+.display {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-display {
+    width: 90%;
+    padding: 10px;
+    height: auto;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.display-img {
+    width: 90%;
+}
+
+.nav-img {
+    display: flex;
+    justify-content: center;
+    margin: 10px 25px;
+    text-align: center;
+}
+
+.option {
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: crimson;
+    transition: .5s;
+    border-radius: 4px;
+}
+
+.option:hover {
+    color: black;
+    opacity: 1;
+}
+
+.lists {
+    width: 25%;
+    height: auto;
+    display: inline-block;
+}
+
+.nav-img li {
+    display: inline-block;
+}
+
+.cars-list {
+    display: flex;
+    border: 1px solid black;
+    padding: 7px;
+    text-align: end;
+}
+
+.cars-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-size: 14px;
+}
+
+.hapus {
+    display: none;
+}
+
+.anime-list {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    padding: 7px;
+    text-align: start;
+}
+
+.anime-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    font-size: 14px;
+}
+
+.title {
+    text-transform: capitalize;
+    text-shadow: none;
+}
+
+.title:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px white;
+}
+
+.lists img {
+    width: 160px;
+    border-radius: 7px;
+}
+
+.lists img:hover {
+    cursor: pointer;
+    width: 162px;
+}
+
+.list-img {
+    display: block;
+}
+
+/*flexible*/
+
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active-img {
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
