@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    text-align: center;
+    line-height: 0;
+}
+
+.container {
+    margin: 10px auto;
+    border: 5px solid white;
+    width: 610px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnails img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.active {
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
